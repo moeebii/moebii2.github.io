@@ -1,0 +1,118 @@
+body {
+    background-image : url('flushing_sunflower_preview.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+p {
+    position: absolute;
+    font-family: "vendetta", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    color: navy;
+}
+
+
+.moving1:hover {
+    color: red;
+}
+.moving2:hover {
+    color: red;
+}
+.moving3:hover {
+    color: red;
+}
+
+
+p1 {
+    position: absolute;
+    font-family: "park-lane", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: navy;
+    left:640px;
+    top:1000px
+    margin: 0px
+}
+
+
+
+.one {
+    border: 1px solid transparent;
+}
+
+.moving-text {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    transition: transform 4s ease-in-out;
+    font-family: "park-lane", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: navy;
+}
+
+video {
+    position: absolute;
+    top: 0px;
+    left:1100px;
+}
+
+
+    .shape {
+      margin: 200px 0;
+      left:600px;
+      position: relative;
+      display: block;
+      color: floralwhite;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid floralwhite;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg);
+    }
+    .shape:before {
+      border-bottom: 80px solid floralwhite;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    .shape:after {
+      position: absolute;
+      display: block;
+      color: floralwhite;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid floralwhite;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+    .shape {
+        transition: all 2s ease;
+        }
+    .shape:hover {
+  -webkit-transform: rotate(360deg) scale(1.5);
+  transform: rotate(360deg) scale(1.5);
+  cursor: pointer;
+    }

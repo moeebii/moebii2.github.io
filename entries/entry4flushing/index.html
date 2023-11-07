@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flushing</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://use.typekit.net/pbz7ozm.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<link rel="icon" href="iheartny.png" type="image/x-icon" />
+</head>
+
+<body>
+	<video width="320" height="240" controls>
+  <source src="movie.mp4">
+
+</video>
+	<p style="left:70px; top:0px;"> dear </p>
+	<p style="left:70px; top:50px" id = "p-one" class = "one">
+		flushing, 
+	</p>
+	<p style="left:70px; top:140px; 
+	font-family: vendetta, serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;"> Who's here for a good meal? <br> BBQ and Hotpot Delights from East Asia! </p>
+
+    click your fav
+    	</p1>
+
+	<p>
+	<span class="shape">
+	</span>
+	</p>
+
+
+	
+	<audio id = "my-audio">
+		<source src="FLUSHING_AUDIO.mp3" type="audio/mp3">
+	</audio>
+	<script>
+		var audio = $("#my-audio")[0];
+		var audioPlaying = false;
+		$("#p-one")
+			.mouseenter(function() {
+				audio.currentTime = 0;
+				audio.play();
+				audioPlaying = true;
+			});
+		$("#p-one")
+			.mouseleave(function() {
+				if (audioPlaying) {
+					audio.pause();
+					audioPlaying = false;
+				}
+			});
+ 
+	</script>
+
+	<div id = "moving1" class = "moving-text" style="left:650px; top:150px;">
+		chinese
+	</div>
+	<script>
+		document.getElementById("moving1").addEventListener("click", function() { 
+			let elem = document.getElementById("new_para");
+			if (elem != null) {
+				elem.parentNode.removeChild(elem);
+			}
+			let elem2 = document.getElementById("new_text");
+			if (elem2 != null) {
+				elem2.parentNode.removeChild(elem2);
+			}
+			const para = document.createElement("p");
+			para.id = "new_para";
+			para.style.fontSize = 30+"px";
+			para.style.top = "450px";
+			para.style.left = "550px";
+			const a1 = document.createElement("a");
+			a1.href = "https://www.google.com/maps/place/O2+BBQ/@40.7452372,-74.187803,10.89z/data=!4m10!1m2!2m1!1sO2+Korean+BBQ!3m6!1s0x89c261e6d5415555:0x4e47102ba226de8b!8m2!3d40.7589126!4d-73.7683094!15sCg1PMiBLb3JlYW4gQkJRIgOIAQFaDyINbzIga29yZWFuIGJicZIBGmtvcmVhbl9iYXJiZWN1ZV9yZXN0YXVyYW504AEA!16s%2Fg%2F11f5h7nnby?hl=en&entry=ttu"
+			a1.innerHTML = "Haidilao Hot Pot Flushing"
+			para.appendChild(a1);
+			const text = document.createElement("p");
+			text.id = "new_text";
+			text.innerHTML = "recommended by my chinese friend: the best hotpot in flushing is the haidilao hot pot, founded in jianyang, sichuan! <br /> their dipping sauce counter- with tens of toppings, including chilli, sesame, green onions, garlic, soy and more will definitely suprise you. each dipping sauce is customizable. <br /> of course, try their classics, beef tongue, pig red and shabu shabu. their japanese section won't dissapoint you too- kobe beef and a5 wagyu. <br /> don't forget the seafood, shrimp, lobter, clam, fish, crab, squid... it's a festibal. <br /> the sides are delicious with tofu, curd, noodles, vegtables and rice cake all day long. , "
+			text.style.fontSize = 20+"px";
+			text.style.color = "navy";
+			text.style.top = "500px";
+			text.style.left = "80px";
+			document.body.appendChild(text);
+			document.body.appendChild(para);
+		});
+	</script>
+	<div id = "moving2" class = "moving-text" style="left:850px; top:350px;">
+		korean
+	</div>
+	<script>
+		document.getElementById("moving2").addEventListener("click", function() { 
+			let elem = document.getElementById("new_para");
+			if (elem != null) {
+				elem.parentNode.removeChild(elem);
+			}
+			let elem2 = document.getElementById("new_text");
+			if (elem2 != null) {
+				elem2.parentNode.removeChild(elem2);
+			}
+			const para = document.createElement("p");
+			para.id = "new_para";
+			para.style.fontSize = 30+"px";
+			para.style.top = "450px";
+			para.style.left = "645px";
+			const a1 = document.createElement("a");
+			a1.href = "https://www.google.com/maps/place/O2+BBQ/@40.7452372,-74.187803,10.89z/data=!4m10!1m2!2m1!1sO2+Korean+BBQ!3m6!1s0x89c261e6d5415555:0x4e47102ba226de8b!8m2!3d40.7589126!4d-73.7683094!15sCg1PMiBLb3JlYW4gQkJRIgOIAQFaDyINbzIga29yZWFuIGJicZIBGmtvcmVhbl9iYXJiZWN1ZV9yZXN0YXVyYW504AEA!16s%2Fg%2F11f5h7nnby?hl=en&entry=ttu"
+			a1.innerHTML = "O2 BBQ"
+			para.appendChild(a1);
+			const text = document.createElement("p");
+			text.innerHTML = "a simple, affordable, korean all-you-can-eat BBQ restaurant with table girlls. enjoy bucket-full of meat with kimchi and korean sides! <br /> their 13. beef thin brisket is a great starter for your all-you-can-eat, then their 16. handing tender steak and don't forget their 9. pork belly! order garlic as a side to make your customized sauce. <br /> what makes the experience special are the amazing attentive staffs, helping you cook your meat. the trip to flushing is worth it! make an appointment now!"
+			text.id = "new_text";
+			text.style.fontSize = 20+"px";
+			text.style.color = "navy";
+			text.style.top = "500px";
+			text.style.left = "80px";
+			document.body.appendChild(text);
+			document.body.appendChild(para);
+		});
+	</script>
+	<div id = "moving3" class = "moving-text" style="left:450px; top:350px;">
+		japanese
+	</div>
+	<script>
+		document.getElementById("moving3").addEventListener("click", function() { 
+			let elem = document.getElementById("new_para");
+			if (elem != null) {
+				elem.parentNode.removeChild(elem);
+			}
+			let elem2 = document.getElementById("new_text");
+			if (elem2 != null) {
+				elem2.parentNode.removeChild(elem2);
+			}
+			const para = document.createElement("p");
+			para.id = "new_para";
+			para.style.fontSize = 30+"px";
+			para.style.top = "450px";
+			para.style.left = "550px";
+			const a1 = document.createElement("a");
+			a1.href = "https://www.google.com/maps/place/Gyu-Kaku+Japanese+BBQ/@40.7582185,-73.8324889,17z/data=!3m1!4b1!4m6!3m5!1s0x89c26011fef54e19:0xa0a12dbd84f6cae6!8m2!3d40.7582185!4d-73.829914!16s%2Fg%2F11dft7v3s5?hl=en&entry=ttu"
+			a1.innerHTML = "Gyu-Kaku Japanese BBQ"
+			para.appendChild(a1);
+			const text = document.createElement("p");
+			text.innerHTML = "experience the true japanese bbq from this japanese chain store! their $52 premium course provides various meats and japanese sides. <br /> start off with garlic shio cabbage and the spicy addicting cucumber... let's start slow. reminds you of the japanesemove on to toro beef, pork belly and yaki-shabu for the melty kisses. <br /> after more steak and seafood, finish with some green tea icecream. what a way to end your japanese bbq!  "
+			text.id = "new_text";
+			text.style.fontSize = 20+"px";
+			text.style.color = "navy";
+			text.style.top = "500px";
+			text.style.left = "80px";
+			document.body.appendChild(text);
+			document.body.appendChild(para);
+		});
+	</script>
+	<script>
+		const movingText = document.getElementById('moving1');
+		const movingText2 = document.getElementById('moving2');
+		const movingText3 = document.getElementById('moving3');
+
+		const positions = [
+            { x: 200, y: 200 },
+            { x: -200, y: 200 },
+            { x: 0, y: 0 }
+        ];
+		const positions2 = [
+            { x: -400, y: 0 },
+            { x: -200, y: -200 },
+            { x: 0, y: 0 }
+        ];
+		const positions3 = [
+            { x: 200, y: -200 },
+            { x: 400, y: 0 },
+            { x: 0, y: 0 }
+        ];
+		const index1 = { value: 0 };
+		const index2 = { value: 0 };
+		const index3 = { value: 0 };
+		
+        function alternateTextPosition(positions,movingText,index) {
+            const { x, y } = positions[index.value];
+            movingText.style.transform = `translate(${x}px, ${y}px)`;
+            index.value = (index.value + 1) % positions.length;
+        }
+		
+        setInterval(() => alternateTextPosition(positions,movingText,index1), 6000); // Change position every 2 seconds
+		setInterval(() => alternateTextPosition(positions2,movingText2,index2), 6000);
+		setInterval(() => alternateTextPosition(positions3,movingText3,index3), 6000);
+    </script>
+</body>
+
+</html>

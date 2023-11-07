@@ -1,0 +1,73 @@
+.ribbon {
+    max-width: 100%;
+    width: 30%;
+    margin-top: -1%;
+    margin-left: 20%;
+    transform: translateX(-50%);
+    position: absolute; 
+    z-index: 1; 
+}
+
+.heart {
+    max-width: 100%;
+    width: 20%;
+    margin-top: 33%; 
+    margin-left: 16%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2; 
+}
+
+.flower {
+    max-width: 100%;
+    width: 30%;
+    margin-top: 0%;
+    margin-left: 80%;
+    transform: translateX(-50%);
+    position: absolute; /* Position elements absolutely */
+    z-index: 1; /* Adjust the z-index to control stacking order */
+}
+
+.nytimes {
+    max-width: 100%;
+    width: 35%;
+    margin-top: 25%; 
+    margin-left: 80%;
+    transform: translateX(-50%);
+    position: absolute; /* Position elements absolutely */
+    z-index: 2; /* Adjust the z-index to control stacking order */
+}
+
+.moving {
+    width: 50%
+}
+
+html, body {
+    background: #F8EEE5;
+
+}
+
+.container, .centered-video {
+  display: flex;
+  flex-direction: column;
+  padding:5px;
+  min-height: 300px;
+  font-family: 'PT Mono', monospace;
+  color:  #042135;
+  font-size:  15px;
+  text-align:  center;
+  align-items: center;
+
+}
+
+
+
+
+
+* {box-sizing:  border-box;}
+
+.item {
+  margin: 5px 5px;
+  width: 300px;
+}
+

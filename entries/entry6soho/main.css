@@ -1,0 +1,160 @@
+.sohophoto {
+  background-image: url('sohophoto.png');
+  background-size: cover;
+}
+
+@media (max-width: 480px) {
+    .sohophoto {
+        background-image: url(sohophoto.png);
+    }
+}
+
+#paper-image {
+}
+
+@media (max-width: 480px) {
+    #paper-image {
+        max-width: 80%; /* Adjust the max-width for smaller screens (e.g., phones) */
+    }
+}
+
+
+
+
+.title {
+    display: flex;
+    top: 20px;
+    flex-wrap: wrap;
+  }
+
+
+.ul{ 
+    justify-content: space-between;
+}
+
+
+.img[src$="paperbag.png"] {
+  padding: 10px;
+}
+
+.acnestudios {
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 100px;
+  left: 600px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 100px;
+}
+
+.miffy {
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 70px;
+  left: 800px;
+  width: 200px;
+  height: 200px;
+}
+
+.uniqlo {
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 300px;
+  left: 600px;
+  width: 200px;
+  height: 200px;
+}
+
+.apc {
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 300px;
+  left: 1100px;
+  width: 200px;
+  height: 200px;
+}
+
+.sabon {
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 300px;
+  left: 850px;
+  width: 200px;
+  height: 200px;
+}
+
+.miumiu {
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 80px;
+  left: 1100px;
+  width: 200px;
+  height: 200px;
+  padding-bottom: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  min-height: 300px;
+  font-family: "minion-3", serif;
+  font-weight: 400px;
+  font-style: normal;
+  color:  #2e2d35;
+  font-size:  15px;
+  line-height: 22px;
+  text-align:  justify-all;
+  box-sizing:  content-box;
+}
+
+
+.shopatsoho{
+  font-family: "parfumerie-script", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  color:  #2e2d35;
+  font-size: 250px;
+  line-height: 70px;
+  margin-bottom:50px;
+  }
+
+
+
+.item {
+    margin-bottom: 25px;
+    width: 50%;
+    padding: 20px;  
+
+}
+
+.item2 {
+  background-color:  #8a849c
+}
+
+.item3 {
+  background-color:  #a099b5;
+}
+
+.item4 {
+  background-color:  #bbb2d3;
+}
+
+.item5 {
+  background-color:  #cbcade;
+}
+
+.item6 {
+  background-color:  #e4e3f9;
+}
+
+@media (max-width: 600px) {
+  .item {
+    width: 100%;
+    padding:0;
+  } 
+  .container{
+    flex-direction: column;
+  }
+}
