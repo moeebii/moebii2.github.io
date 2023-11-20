@@ -159,12 +159,6 @@ h1 {
     color: #355854;
 }
 
-@media screen and (max-width: 900px) {
-  .u {
-    font-size: 120pt; /* tablets */
-  }
-}
-
 @media screen and (max-width: 680px) {
   .u {
     font-size: 80pt; /* phones */
