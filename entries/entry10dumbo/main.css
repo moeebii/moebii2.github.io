@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.png'); 
+    background-size: cover;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+
+
+.home {
+    font-family: "adobe-garamond-pro", serif;
+    color: #DE5D83;
+}
+
+.next {
+    font-family: "adobe-garamond-pro", serif;
+    color: #DE5D83;
+}
+
+.dumbogif {
+    max-width: 100%;
+    width: 20%;
+    margin-top: 10%; 
+    margin-left: 60%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1; 
+}
+.support {
+    font-family: "sweet-fancy-script", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    color: #F4C2C2; 
+    position: absolute;
+    margin-top: 50vh;
+    top: -42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+
+.info {
+    font-family: "adobe-garamond-pro", serif;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    margin-top: 50vh;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+
+
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F4C2C2; 
+  opacity: 94%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.popup-text {
+  color: white; 
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+.title {
+    font-family: "etna", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 95px;
+    text-align: center;
+    color: #F4C2C2;
+    margin-top: 50vh;
+    position: absolute;
+    top: -33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.custom-photo {
+  position: absolute;
+  width: 15%;
+  top: 37%;
+  left: 41%; 
+  transform: translate(-50%, -50%);
+  max-width: 100%; 
+  max-height: 100%; 
+}
+.flowers {
+  position: absolute;
+  width: 15%;
+  top: 75%;
+  left: 41%; 
+  transform: translate(-50%, -50%);
+  max-width: 100%; 
+  max-height: 100%; 
+}
+
+.details {
+  position: absolute;
+  width: 16%;
+  top: 60%;
+  left: 60%; 
+  transform: translate(-50%, -50%);
+  max-width: 100%; 
+  max-height: 100%; 
+}
+
+
+.star-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  display: inline-block;
+  color: #F4C2C2;  
+  font-size: 20px;
+  white-space: nowrap;
+  animation: moveStars linear infinite;
+  animation-duration: 5s;
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.star:nth-child(1) { top: 10%; left: 68%; animation-delay: 0.2s; }
+.star:nth-child(10) { top: 15%; left: 1%; animation-delay: 2s; }
+.star:nth-child(2) { top: 20%; left: 3%; animation-delay: 0.4s; }
+.star:nth-child(11) { top: 25%; left: 33%; animation-delay: 0.4s; }
+.star:nth-child(3) { top: 30%; left: 27%; animation-delay: 0.6s; }
+.star:nth-child(12) { top: 35%; left: 99%; animation-delay: 0.9s; }
+.star:nth-child(4) { top: 40%; left: 82%; animation-delay: 0.8s; }
+.star:nth-child(13) { top: 45%; left: 22%; animation-delay: 0.4s; }
+.star:nth-child(5) { top: 50%; left: 57%; animation-delay: 1s; }
+.star:nth-child(6) { top: 60%; left: 13%; animation-delay: 1.2s; }
+.star:nth-child(7) { top: 70%; left: 78%; animation-delay: 1.4s; }
+.star:nth-child(8) { top: 80%; left: 12%; animation-delay: 1.6s; }
+.star:nth-child(9) { top: 90%; left: 95%; animation-delay: 1.8s; }
+
+
+
+    #audioContainer {
+      position: relative;
+    }
+
+    audio {
+      width: 195px; 
+      position: absolute;
+      top: 50%; 
+      left: 42%;
+      transform: translate(-50%, -50%);
+    }
