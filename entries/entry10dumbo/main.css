@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('background.png'); 
+  background-size: cover;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+}
 
 .home {
     font-family: "adobe-garamond-pro", serif;
@@ -11,13 +21,35 @@
 
 .dumbogif {
     max-width: 100%;
-    width: 20%;
-    margin-top: 10%; 
+    width: 14%;
+    margin-top: 11%; 
     margin-left: 60%;
     transform: translateX(-50%);
     position: absolute;
     z-index: -1; 
 }
+
+.margin-top {
+    max-width: 100%;
+    width: 40%;
+    top: 40%; 
+    margin-left: 40%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1; 
+}
+
+
+.map {
+    max-width: 100%;
+    width: 14%;
+    margin-top: 30%; 
+    margin-left: 40%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1; 
+}
+
 
 .book {
     flex: auto;
@@ -116,25 +148,30 @@
 
 
 .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  z-index: 2;
-  top: 0%;
-  left: 30%;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    z-index: 2;
+    top: 0%;
+    left: 30%;
+    margin-top: 20px; /* Adjust the margin-top value to create space */
 }
 
 .tooltip .tooltiptext {
-visibility: hidden;
-  width: 150px;
-  background-color: #F4C2C2; 
-  color: black;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 2;
+    visibility: hidden;
+    width: 150px;
+    background-color: #F4C2C2;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 2;
+    top: 50%; /* Adjust the top value to move it down */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 }
 
