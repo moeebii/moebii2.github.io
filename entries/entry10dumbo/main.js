@@ -5,3 +5,10 @@ document.getElementById('closePopup').addEventListener('click', function() {
 });
 
 
+document.querySelector('.tooltip').addEventListener('mouseover', function() {
+  document.querySelector('.tooltiptext').style.visibility = 'visible';
+});
+
+document.querySelector('.tooltip').addEventListener('mouseout', function() {
+  document.querySelector('.tooltiptext').style.visibility = 'hidden';
+});

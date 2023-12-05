@@ -1,3 +1,12 @@
+.buttons {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: "adobe-garamond-pro", serif;
+    font-size: 15px;
+    color: white;
+}
+
 body {
     margin: 0;
 }
@@ -10,7 +19,7 @@ div {
     font-size: 100px;
 }
 
-div:hover {
+.top-left:hover {
     font-variation-settings: "wght" 500; 
     letter-spacing: 1px;
     transform: skewX(-8deg);
@@ -70,7 +79,7 @@ li:last-child {
 
 .top-left {
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: 40px;
 }
 
