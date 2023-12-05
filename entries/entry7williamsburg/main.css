@@ -30,20 +30,10 @@ body{
   	font-style: normal;
   	font-size: 30px;
     font-family: "gelica", sans-serif;
-	color: black;
+	color: white;
   	position: sticky;
   	z-index: 3; 
   	top: 0; 
-}
-
-
-.words {
-  opacity: 0;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  font-size: 30px;
-  font-family: "adobe-garamond-pro", serif;
 }
 
 
@@ -168,7 +158,7 @@ body{
     font-size: 100px; /* phones */
   }
 
-  
+
 
 
 
