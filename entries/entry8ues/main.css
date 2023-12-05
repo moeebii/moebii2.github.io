@@ -1,5 +1,6 @@
 body {
-	background: #2790ad;
+	background: #FEC0CB;
+ 
 
 
 }
@@ -9,7 +10,7 @@ body {
   font-weight: 400;
   font-size: 100px;
   font-style: normal;
-  color: #ffcf4c;
+  color: #2790ad;
   display: flex;
   flex-direction: column;
   text-align:  center;

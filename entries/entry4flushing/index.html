@@ -7,14 +7,29 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="https://use.typekit.net/pbz7ozm.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<link rel="icon" href="iheartny.png" type="image/x-icon" />
+	<link rel="icon" href="flower.jpg" type="image/x-icon" />
 </head>
 
 <body>
-	<video width="320" height="240" controls>
-  <source src="movie.mp4">
+<a class="home" href="/moebii2.github.io/entries/entername/">home</a>
+<a class="next" href="/moebii2.github.io/entries/entry5UnionSquare/">next</a>
 
-</video>
+
+	 <div class="star-container">
+    <div class="star">たべもの</div>
+    <div class="star">음식</div>
+    <div class="star">嗯</div>
+    <div class="star">おいしい</div>
+    <div class="star">嗯</div>
+    <div class="star">음식</div>
+    <div class="star">食物</div>
+    <div class="star">たべもの</div>
+    <div class="star">음식</div>
+    <div class="star">食物</div>
+    <div class="star">おいしい</div>
+    <div class="star">음식</div>
+  </div>
+
 	<p style="left:70px; top:0px;"> dear </p>
 	<p style="left:70px; top:50px" id = "p-one" class = "one">
 		flushing, 
@@ -25,7 +40,6 @@
     font-style: normal;
     font-size: 20px;"> Who's here for a good meal? <br> BBQ and Hotpot Delights from East Asia! </p>
 
-    click your fav
     	</p1>
 
 	<p>
@@ -33,29 +47,28 @@
 	</span>
 	</p>
 
+ <script>
 
-	
-	<audio id = "my-audio">
-		<source src="FLUSHING_AUDIO.mp3" type="audio/mp3">
-	</audio>
-	<script>
-		var audio = $("#my-audio")[0];
-		var audioPlaying = false;
-		$("#p-one")
-			.mouseenter(function() {
-				audio.currentTime = 0;
-				audio.play();
-				audioPlaying = true;
-			});
-		$("#p-one")
-			.mouseleave(function() {
-				if (audioPlaying) {
-					audio.pause();
-					audioPlaying = false;
-				}
-			});
- 
-	</script>
+    // audio element
+    const audio = new Audio('FLUSHING_AUDIO.mp3');
+
+    // Get the rotating shape element
+    const rotatingShape = document.querySelector('.shape');
+
+    // Add a click event listener to the rotating shape
+    rotatingShape.addEventListener('click', function() {
+      // Check if the audio is paused
+      if (audio.paused) {
+        // If paused, play the audio
+        audio.play();
+      } else {
+        // If playing, pause the audio
+        audio.pause();
+      }
+    });
+
+  </script>
+
 
 	<div id = "moving1" class = "moving-text" style="left:650px; top:150px;">
 		chinese
@@ -190,6 +203,11 @@
 		setInterval(() => alternateTextPosition(positions2,movingText2,index2), 6000);
 		setInterval(() => alternateTextPosition(positions3,movingText3,index3), 6000);
     </script>
+
+
 </body>
+
+<script src="main.js"></script>
+
 
 </html>
