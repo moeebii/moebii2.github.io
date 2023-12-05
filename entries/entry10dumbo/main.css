@@ -180,8 +180,7 @@ visibility: hidden;
 
 .star {
   position: absolute;
-  display: inline-block;
-  color: #F4C2C2;  
+  display: inline-block; 
   font-size: 20px;
   white-space: nowrap;
   animation: moveStars linear infinite;

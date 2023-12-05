@@ -1,6 +1,14 @@
+body {
+    background: url('sweater.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
 .home, .next {
     font-family: "adobe-garamond-pro", serif;
-    color: white;
+    color: #FF007F;
     position: fixed;
     top: 10px;
     left: 10px; 
@@ -57,7 +65,7 @@ body {
     padding: 20px 0;
     display: flex;
     position: relative;
-    color: white;
+    color: #FF007F;
 }
 
 .items {
@@ -135,7 +143,7 @@ body {
 }
 
 .img-1 {
-    width: 15%;
+    width: 30%;
     margin-top: -25%; 
     margin-left: -60%;
     transform: translateX(-50%);
@@ -144,25 +152,25 @@ body {
 }
 
 .img-2 {
-    width: 18%;
-    margin-top: -20%; 
-    margin-left: -50%;
+    width: 20%;
+    margin-top: -17%; 
+    margin-left: -42%;
     transform: translateX(-50%);
     position: absolute;
     z-index: -9; 
 }
 
 .img-3 {
-    width: 22%;
-    margin-top: -22%; 
-    margin-left: -37%;
+    width: 23%;
+    margin-top: -5%; 
+    margin-left: -50%;
     transform: translateX(-50%);
     position: absolute;
     z-index: -8; 
 }
 
 .img-4 {
-    width: 13%;
+    width: 20%;
     margin-top: -25%; 
     margin-left: -21%;
     transform: translateX(-50%);
@@ -171,17 +179,17 @@ body {
 }
 
 .img-5 {
-    width: 22%;
+    width: 40%;
     margin-top: -16%; 
-    margin-left: -12%;
+    margin-left: -20%;
     transform: translateX(-50%);
     position: absolute;
     z-index: -7;  
 }
 
 .img-6 {
-    width: 12%;
-    margin-top: -10%; 
+    width: 27%;
+    margin-top: 8%; 
     margin-left: -68%;
     transform: translateX(-50%);
     position: absolute;
@@ -189,12 +197,40 @@ body {
 }
 
 .img-7 {
+    width: 30%;
+    margin-top: 8%; 
+    margin-left: -30%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -8;  
+}
+
+.img-8 {
+    width: 30%;
+    margin-top: -30%; 
+    margin-left: 15%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -6;  
+}
+
+.img-9 {
     width: 27%;
     margin-top: -30%; 
     margin-left: 10%;
     transform: translateX(-50%);
     position: absolute;
     z-index: -6;  
+}
+
+
+.img-10 {
+    width: 30%;
+    margin-top: 3%; 
+    margin-left: 8%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -8;  
 }
 
 
@@ -218,6 +254,47 @@ body {
 .clickable-image {
     cursor: pointer; 
 }
+
+.star-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  display: inline-block;
+  color: white;  
+  font-size: 40px;
+  white-space: nowrap;
+  animation: moveStars linear infinite;
+  animation-duration: 5s;
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.star:nth-child(1) { top: 10%; left: 68%; animation-delay: 0.2s; }
+.star:nth-child(10) { top: 15%; left: 1%; animation-delay: 2s; }
+.star:nth-child(2) { top: 20%; left: 3%; animation-delay: 0.4s; }
+.star:nth-child(11) { top: 25%; left: 33%; animation-delay: 0.4s; }
+.star:nth-child(3) { top: 30%; left: 27%; animation-delay: 0.6s; }
+.star:nth-child(12) { top: 35%; left: 99%; animation-delay: 0.9s; }
+.star:nth-child(4) { top: 40%; left: 82%; animation-delay: 0.8s; }
+.star:nth-child(13) { top: 45%; left: 22%; animation-delay: 0.4s; }
+.star:nth-child(5) { top: 50%; left: 57%; animation-delay: 1s; }
+.star:nth-child(6) { top: 60%; left: 13%; animation-delay: 1.2s; }
+.star:nth-child(7) { top: 70%; left: 78%; animation-delay: 1.4s; }
+.star:nth-child(8) { top: 80%; left: 12%; animation-delay: 1.6s; }
+.star:nth-child(9) { top: 90%; left: 95%; animation-delay: 1.8s; }
 
 
 
