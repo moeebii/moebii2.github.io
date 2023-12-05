@@ -22,7 +22,7 @@ body {
 .dumbogif {
     max-width: 100%;
     width: 14%;
-    margin-top: 11%; 
+    margin-top: 150px; 
     margin-left: 60%;
     transform: translateX(-50%);
     position: absolute;
@@ -43,7 +43,7 @@ body {
 .map {
     max-width: 100%;
     width: 14%;
-    margin-top: 30%; 
+    margin-top: 360px; 
     margin-left: 40%;
     transform: translateX(-50%);
     position: absolute;
@@ -186,7 +186,7 @@ body {
 .custom-photo {
   position: absolute;
   width: 15%;
-  top: 37%;
+  top: 250px;
   left: 41%; 
   transform: translate(-50%, -50%);
   max-width: 100%; 
