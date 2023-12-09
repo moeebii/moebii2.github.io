@@ -271,6 +271,7 @@ body {
   white-space: nowrap;
   animation: moveStars linear infinite;
   animation-duration: 5s;
+
 }
 
 @keyframes moveStars {

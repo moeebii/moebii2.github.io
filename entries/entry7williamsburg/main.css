@@ -36,8 +36,6 @@ body{
   	top: 0; 
 }
 
-
-
 .container {
   display: flex;
   padding: 60px;
@@ -54,6 +52,43 @@ body{
 .item {
   margin: 300px 300px;
   width: 500px;
+  position: absolute;
+}
+
+.item1 {
+  margin-top: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.item2 {
+  margin-top: 145%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.item3 {
+  margin-top: 235%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.item4 {
+  margin-top: 320%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.item5 {
+  margin-top: 410%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.item6 {
+  margin-top: 500%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .photo {
@@ -79,7 +114,7 @@ body{
 .ready {
     max-width: 100%;
     width: 40%;
-    margin-top: -254%; 
+    margin-top: 28%; 
     margin-left: 35%;
     transform: translateX(-50%);
     position: absolute;
@@ -89,7 +124,7 @@ body{
 .bag {
     max-width: 100%;
     width: 40%;
-    margin-top: -250%; 
+    margin-top: 32%; 
     margin-left: 65%;
     transform: translateX(-50%);
     position: absolute;
@@ -99,7 +134,7 @@ body{
 .matcha {
     max-width: 100%;
     width: 40%;
-    margin-top: -210%; 
+    margin-top: 75%; 
     margin-left: 48%;
     transform: translateX(-50%);
     position: absolute;
@@ -109,7 +144,7 @@ body{
 .angels {
     max-width: 100%;
     width: 55%;
-    margin-top: -165%; 
+    margin-top: 120%; 
     margin-left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -119,7 +154,7 @@ body{
 .thrift {
     max-width: 100%;
     width: 40%;
-    margin-top: -120%; 
+    margin-top: 165%; 
     margin-left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -129,7 +164,7 @@ body{
 .boba {
     max-width: 100%;
     width: 40%;
-    margin-top: -70%; 
+    margin-top: 213%; 
     margin-left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -139,7 +174,7 @@ body{
 .martha {
     max-width: 100%;
     width: 30%;
-    margin-top: -25%; 
+    margin-top: 255%; 
     margin-left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -157,10 +192,4 @@ body{
   .title {
     font-size: 100px; /* phones */
   }
-
-
-
-
-
-
-
+}
