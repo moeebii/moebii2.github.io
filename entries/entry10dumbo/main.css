@@ -1,12 +1,78 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('background.png'); 
   background-size: cover;
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh; 
+}
+
+.diary-entry {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  font-size: 15px;
+  max-width: 200px;
+}
+
+.diary-entry2 {
+  position: absolute;
+  top: 55%;
+  left: 53%;
+  font-size: 15px;
+  max-width: 200px;
+}
+
+.image {
+  max-width: 100%;
+  width: 14%;
+  z-index: 1;
+  position: absolute;
+}
+
+.type {
+  font-family: monospace;
+  color:#0000;
+  background:
+    linear-gradient(-90deg, black 5px,#0000 0) 10px 0,
+    linear-gradient(black 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b .6s infinite steps(1),   
+   t calc(var(--n)*.2s) steps(var(--n)) forwards;
+}
+
+.type2 {
+  font-family: monospace;
+  visibility: hidden;
+  color: #0000;
+  background:
+    linear-gradient(-90deg, black 5px,#0000 0) 10px 0,
+    linear-gradient(black 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b .6s infinite steps(1),   
+   t calc(var(--n)*.2s) steps(var(--n)) forwards,
+   colorChange .1s forwards;
+  animation-delay: 4.5s, 4.5s, 4.5s;
+}
+
+@keyframes t {
+  from {background-size:0 200%}
+}
+@keyframes b {
+  50% {background-position:0 -100%,0 0}
+}
+
+@keyframes colorChange {
+  to { visibility : visible; }
 }
 
 .home {
@@ -17,16 +83,6 @@ body {
 .next {
     font-family: "adobe-garamond-pro", serif;
     color: #DE5D83;
-}
-
-.dumbogif {
-    max-width: 100%;
-    width: 14%;
-    margin-top: 150px; 
-    margin-left: 60%;
-    transform: translateX(-50%);
-    position: absolute;
-    z-index: -1; 
 }
 
 .margin-top {
@@ -43,11 +99,10 @@ body {
 .map {
     max-width: 100%;
     width: 14%;
-    margin-top: 360px; 
-    margin-left: 40%;
-    transform: translateX(-50%);
+    margin-top: 350px; 
+    margin-left: 33%;
     position: absolute;
-    z-index: -1; 
+    z-index: 1; 
 }
 
 
@@ -108,7 +163,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 3;
 }
 
 .popup-content {
@@ -131,50 +186,35 @@ body {
 }
 
 
-.title {
-    font-family: "etna", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 95px;
-    text-align: center;
-    color: #F4C2C2;
-    margin-top: 50vh;
-    position: absolute;
-    top: -33%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-
 .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-    z-index: 2;
-    top: 0%;
-    left: 30%;
-    margin-top: 20px; /* Adjust the margin-top value to create space */
+  font-family: "etna", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 95px;
+  text-align: center;
+  color: #F4C2C2;
+  margin-top: 50vh;
+  position: absolute;
+  top: -33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 150px;
-    background-color: #F4C2C2;
-    color: black;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 2;
-    top: 50%; /* Adjust the top value to move it down */
-    left: 50%;
-    transform: translate(-50%, -50%);
+  font-size: 8px;
+  visibility: hidden;
+  width: 80px;
+  background-color: #F4C2C2;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 2;
+  top: 65%; /* Adjust the top value to move it down */
+  left: 105%;
+  transform: translate(-50%, -50%);
 }
-
-
-}
-
 
 
 .container {
@@ -206,13 +246,13 @@ body {
 }
 
 
-
 .star-container {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: -1;
 }
 
 .star {
@@ -256,7 +296,7 @@ body {
     audio {
       width: 195px; 
       position: absolute;
-      top: 50%; 
-      left: 42%;
+      top: 35%; 
+      left: 60%;
       transform: translate(-50%, -50%);
     }
