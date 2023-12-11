@@ -1,5 +1,3 @@
-let navElement = document.querySelector(".nav");
-navElement.classList.add("special");
 var string = "let's explore the neighborhood! ";
 var array = string.split("");
 var timer;
