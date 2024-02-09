@@ -1,0 +1,69 @@
+html {
+  margin: 0;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 5rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+.bubble-container--left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.bubble-container--right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.5rem;
+}
+
+.bubble-blue,
+.bubble-red {
+  color: white;
+  padding: 1rem;
+  max-width: 80rem;
+}
+
+.bubble-blue {
+  background-color: blue;
+  border-radius: 2rem 2rem 2rem 0rem;
+  transition: background-color 300ms;
+
+}
+
+.bubble-blue:hover{
+    background-color: darkblue;
+}
+
+.bubble-red{
+    background-color: red;
+    border-radius: 2rem 2rem 0rem 2rem;
+    text-align: right;
+    transition: 300ms;
+}
+
+.bubble-red:hover{
+    background-color: darkred;
+}
+
+.bubble--name{
+    font-size: 1.4rem;
+    color: grey;
+    font-weight: bold;
+    text-transform: uppercase;
+}
